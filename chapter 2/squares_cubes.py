@@ -1,4 +1,4 @@
-number0 = 0
+pynumber0 = 0
 number1 = 1
 number2 = 2
 number3 = 3

@@ -4,7 +4,11 @@ vaild = 0
 
 
 while vaild != 10:
-	score = int(input("Enter Student Score here: "))
+
+	score = int(input("Enter vaild Score here (Pass 1 or Failed 2): "))
+	if score < 1 or score > 2:
+		print("This is not vaild Score")
+
 	if score == 1:
 		passes += 1
 		vaild += 1
