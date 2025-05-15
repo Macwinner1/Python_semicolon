@@ -7,4 +7,4 @@ for index in range(length):
 	value += numbers % 10
 	numbers = numbers // 10
 
-print(f"This is total sum of this above nupy mber {value}")
+print(f"This is total sum of this above number {value}")
