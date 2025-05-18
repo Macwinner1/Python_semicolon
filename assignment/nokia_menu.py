@@ -858,6 +858,12 @@ while exit:
 
 		    	"""   
 			print(callDivert)
+			pressCallDivert = int(input())
+			match pressCallDivert:
+				case 0:
+					print("0 back")
+				case _: 
+					print("Invaild Input")
 
 		case 8:
 			games = """
@@ -867,6 +873,10 @@ while exit:
 
 		    	"""  
 			print(games)
+			pressGames = int(input())
+			match pressGames:
+				case 0:
+					print("0 back")
 
 		case 9:
 			calculator = """
@@ -876,6 +886,10 @@ while exit:
 
 		    	"""   
 			print(calculator)
+			pressCalculator = int(input())
+			match pressCalculator:
+				case 0:
+					print("0 back")
 
 		case 10:
 			reminders = """
@@ -885,6 +899,12 @@ while exit:
 
 		    	"""   
 			print(reminders)
+			pressReminders = int(input())
+			match pressReminders:
+				case 0:
+					print("0 back") 
+				case _: 
+					print("Invalid option")
 
 		case 11:
 			clock = """ 
@@ -902,6 +922,89 @@ while exit:
 
                         """
 			print(clock)
+			pressClock = int(input()) 
+			match pressClock:
+				case 1:
+					alarmClock = """
+
+		Alarm Clock
+		0. Back
+
+			    """
+					print(alarmClock)
+					pressAlarmClock = int(input())
+					match pressAlarmClock:
+						case 0:
+							print("0 back") 
+
+				case 2:
+					clockSettings = """
+
+		Clock settings
+		0. Back
+
+			    """
+					print(clockSettings) 
+					pressClockSettings = int(input())
+					match pressClockSettings:
+						case 0:
+							print("0 back")
+
+				case 3:
+					dateSetting = """
+
+		Date setting
+		0. Back
+
+			    """
+					print(dateSetting); 
+					pressDateSetting = int(())
+					match pressDateSetting:
+						case 0:
+							print("0 back") 
+
+
+				case 4:
+					stopwatch = """
+
+		Stopwatch
+		0. Back
+
+			    """
+					print(stopwatch) 
+					pressStopwatch = int(input())
+					match pressStopwatch:
+						case 0:
+							print("0 back") 
+
+ 
+				case 5:
+					countdownTimer = """
+
+		Countdown timer
+		0. Back
+
+			    """
+					print(countdownTimer)
+					pressCountdownTimer = int(input())
+					match pressCountdownTimer:
+						case 0:
+							print("0 back")
+
+
+				case 6:
+					AutoUpdate = """
+
+		Auto update of date and time
+		0. Back
+					"""
+					print(AutoUpdate); 
+					pressAutoUpdate = int(())
+					match pressAutoUpdate: 
+						case 0:
+							print("0 back")
+						case _: print("Invalid option")
+			
 
 		case 12:
 			profiles = """
@@ -918,7 +1021,7 @@ while exit:
 		SIM services
 		0. Back
 
-		    	"""  
+			"""  
 			print(simServices)
 
 		case 14:
