@@ -641,6 +641,214 @@ while exit:
  
                                     """
 			print(settings)
+			pressSetting = int(input()) 
+			match pressSetting: 
+				case 1:
+					callSettings = """ 
+
+		1. Call settings 
+ 
+		1. Automatic redial 
+		2. Speed dialling 
+		3. Call waiting options
+		4. Own number sending
+		5. Phone line in use
+		6. Automatic answer
+		7.<- Back
+
+
+                                            """ 
+					print(callSettings); 
+					pressCallSettings = int(input()) 
+					match pressCallSettings:
+						case 1:
+							automaticRedial = """
+   
+		Automatic redial
+		0. Back
+					    		"""
+							print(automaticRedial)
+                                             
+						case 2:
+							speedDialling = """
+
+		Speed dialling
+		0. Back
+					    		"""
+							print(speedDialling) 
+                                           
+						case 3:
+							callWaiting = """
+
+		Call waiting options
+		0. Back
+					    """
+							print(callWaiting)
+					   
+						case 4:
+							ownNumber = """
+   
+		Own number sending
+		0. back
+					    """
+							print(ownNumber) 
+                                         
+						case 5:
+							phoneLineIn = """
+
+		Phone line in use
+		0. Back
+					    """
+							print(phoneLineIn) 
+                                        
+						case 6:
+							automaticAnswer = """
+
+		Automatic answer
+		0. Back
+					    """
+							print(automaticAnswer)
+				case 2: 
+					phoneSetting = """ 
+
+		2. Phone setting 
+
+		1. Language 
+		2. Cell info display
+		3. Welcome note
+		4. Network selection
+		5. Lights
+		6. Confirm SIM service actions
+		0.<- Back
+
+
+                                            """
+					print(phoneSetting) 
+					pressPhoneSettings = int(input()) 
+					match pressPhoneSettings: 
+						case 1:
+							language = """
+   
+		Language
+		0. Back
+					    """
+							print(language) 
+                                      
+						case 2:
+							cellInfoDisplay = """
+
+		Cell info display
+		0. Back
+					    """
+							print(cellInfoDisplay) 
+                                   
+						case 3:
+							welcomeNote = """
+
+		Welcome note
+		0. Back
+					    """
+							print(welcomeNote)
+					
+						case 4:
+							networkSelection = """
+   
+		Network selection
+		0. Back
+					    """
+							print(networkSelection) 
+                                   
+						case 5:
+							lights = """
+
+		Lights
+		0. Back
+					    """
+							print(lights) 
+                                          
+						case 6:
+							confirmSIM = """
+
+		Confirm SIM service actions
+		0. Back
+					    """
+							print(confirmSIM) 
+                                
+				case 3:
+					securitySetting = """ 
+
+
+		3. Security settings
+ 
+		1. PIN code request 
+		2. Call barring service 
+		3. Fixed dialling
+		4. Closed user group
+		5. Phone security
+		6. Change access codes
+		0.<- Back
+
+
+                                            """
+					print(securitySetting); 
+					pressSecuritySetting = int(input()) 
+					match pressSecuritySetting: 
+						case 1:
+							codeRequest = """
+   
+		PIN code request
+		0. Back
+					    """
+							print(codeRequest) 
+                                           
+						case 2:
+							callBarringService = """
+
+		Call barring service
+		0. Back
+					    """
+							print(callBarringService)
+                                            
+						case 3:
+							fixedDialling = """
+
+		Fixed dialling
+		0. Back
+					    """
+							print(fixedDialling)
+					 
+						case 4:
+							closedUserGroup = """
+   
+		Closed user group
+		0. Back
+					    """
+							print(closedUserGroup) 
+                                        
+						case 5:
+							phoneSecurity = """
+
+		Phone security
+		0. Back
+					    """
+							print(phoneSecurity) 
+                                         
+						case 6:
+							changeAccessCodes = """
+
+		Change access codes
+		0. Back
+					    """
+							print(changeAccessCodes) 
+                                      
+				case 4:
+					restoreFactory = """
+
+		Restore factory setting
+		0. Back
+			    	     """
+					print(restoreFactory)
+
 
 		case 7:
 			callDivert = """
@@ -666,7 +874,7 @@ while exit:
 		Calculator
 		0. Back
 
-		    	""";   
+		    	"""   
 			print(calculator)
 
 		case 10:
@@ -675,7 +883,7 @@ while exit:
 		Reminders
 		0. Back
 
-		    	""";   
+		    	"""   
 			print(reminders)
 
 		case 11:
