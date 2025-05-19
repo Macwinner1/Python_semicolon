@@ -1,9 +1,9 @@
 def categorize_numbers(numbers, divisor):
-
+	number_list = []
 	for number in numbers:
 		if number % divisor == 0:
-			print(number, end=', ')
+			number_list.append(number)
 
-numbers = [4,6,9,8,10,12]
-divisor = 2
-categorize_numbers(numbers, divisor)
+	return number_list
+	 
+
