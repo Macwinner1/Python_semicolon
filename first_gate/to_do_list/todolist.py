@@ -43,8 +43,8 @@ while exit:
 			for index, value in enumerate(list_of_task):
 				print(index, value)
 				mark_input = input("Enter task number: ")
-				list_of_task(index).append("mark_input")
-				print(list_of_task(index))
+				if mark_input >= 0:
+					list_of_task(index).append("mark_input")
 			
 		case "4":
 			back = True
